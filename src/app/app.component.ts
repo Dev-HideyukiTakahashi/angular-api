@@ -40,14 +40,29 @@ export class AppComponent {
     this.musicas$ = this.musicsService.obterMusicas();
   }
 
-  cadastrarMusica() {
+  buttonClick() {
     if (!this.music || !this.author) {
       return;
     }
+    if (this.id) {
+      this.atualizar();
+      return
+    }
 
     /* Passando no parâmetro dados para instanciar uma music do model */
-    this.musicsService.cadastrarMusica({ author: this.author, text: this.music, })
+    this.musicsService.cadastrarMusica({ author: this.author, text: this.music })
       .subscribe(() => this.obterMusicas())
+  }
 
+  atualizar() {
+    this.musicsService.editarMusica({ id: parseInt(this.id), author: this.author, text: this.music })
+      .subscribe(() => this.obterMusicas());
+
+  }
+
+  preencherCampos(music: Music) {
+    this.id = music.id!.toString();
+    this.author = music.author;
+    this.music = music.text;
   }
 }

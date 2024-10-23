@@ -22,7 +22,12 @@ export class MusicsService {
   }
 
   /* POST */
-  cadastrarMusica(music: MusicCadastrar) {
+  cadastrarMusica(music: Music) {
     return this.httpClient.post<Music>(this.url, music)
+  }
+
+  /* Put */
+  editarMusica(music: Music) {
+    return this.httpClient.put<Music>(this.url + `/${music.id}`, music)
   }
 }

@@ -8,7 +8,7 @@
     {
       "id": "2",
       "author": "AC/DC",
-      "text": "Highway to Hell"
+      "text": "Back in black"
     },
     {
       "id": "3",
@@ -18,7 +18,7 @@
     {
       "id": "5",
       "author": "Van Halen",
-      "text": "Jump"
+      "text": "Eruption"
     },
     {
       "id": "6",
@@ -34,6 +34,11 @@
       "id": "f707",
       "author": "Nova Música",
       "text": "Post"
+    },
+    {
+      "id": "0c05",
+      "author": "Guns N' Roses",
+      "text": "Civil War"
     }
   ]
 }

@@ -15,7 +15,7 @@
       <input type="text" [(ngModel)]="music" name="music">
     </div>
 
-    <button (click)="cadastrarMusica()"> Criar </button>
+    <button (click)="buttonClick()"> {{id ? 'Salvar' : 'Criar' }}</button>
   </form>
 
   <table>
@@ -33,8 +33,7 @@
         <td> {{musica.id}} </td>
         <td> {{musica.author}}</td>
         <td> {{musica.text}}</td>
-        <td>
-        </td>
+        <td> <span (click)="preencherCampos(musica)"> alterar </span> </td>
       </tr>
     </tbody>
   </table>
