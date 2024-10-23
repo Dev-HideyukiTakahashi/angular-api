@@ -10,12 +10,14 @@ export class MusicsService {
 
   private url = environment.api;
 
-  /* Declarando como private no Angular deixa acessível fora do escopo  
-     é necessário adicionar 'provideHttpClient()' no app.config para importar o HttpClient */
+  /* Declarando como private no Angular deixa acessível fora do escopo,  
+     é necessário adicionar 'provideHttpClient()' no app.config para importar o HttpClient
+     em versões antigas do Angular era adicionadop no app.module */
   constructor(private httpClient: HttpClient) {
   }
 
+  /* GET ALL */
   obterMusicas() {
-    this.httpClient.get<Music[]>(this.url + '/musics');
+    return this.httpClient.get<Music[]>(this.url + '/musics');
   }
 }

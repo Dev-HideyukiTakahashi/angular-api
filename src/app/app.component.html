@@ -27,14 +27,13 @@
     </thead>
 
     <tbody>
-      <tr>
-        <td> 1 </td>
-        <td> Guns 'N Roses</td>
-        <td> November Rain</td>
+      <tr *ngFor="let musica of musicas$ | async">
+        <td> {{musica.id}} </td>
+        <td> {{musica.author}}</td>
+        <td> {{musica.text}}</td>
         <td>
         </td>
       </tr>
-
     </tbody>
   </table>
 </div>
