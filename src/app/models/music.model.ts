@@ -1,5 +1,5 @@
 export type Music = {
-  id: number,
+  id?: number,
   author: string,
   text: string
 }

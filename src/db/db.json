@@ -1,34 +1,39 @@
 {
   "musics": [
     {
-      "id": 1,
+      "id": "1",
       "author": "Guns N' Roses",
       "text": "Civil War"
     },
     {
-      "id": 2,
+      "id": "2",
       "author": "AC/DC",
       "text": "Highway to Hell"
     },
     {
-      "id": 3,
+      "id": "3",
       "author": "Led Zeppelin",
       "text": "Whole Lotta Love"
     },
     {
-      "id": 5,
+      "id": "5",
       "author": "Van Halen",
       "text": "Jump"
     },
     {
-      "id": 6,
+      "id": "6",
       "author": "Deep Purple",
       "text": "Smoke on the Water"
     },
     {
       "author": "Guns N Roses",
       "text": "November Rain",
-      "id": 7
+      "id": "7"
+    },
+    {
+      "id": "f707",
+      "author": "Nova Música",
+      "text": "Post"
     }
   ]
 }

@@ -2,28 +2,30 @@
   <form>
     <div>
       <label>Id</label>
-      <input type="text" disabled>
+      <input type="text" disabled [(ngModel)]="id" name="id">
     </div>
 
     <div>
       <label>Author</label>
-      <input type="text">
+      <input type="text" [(ngModel)]="author" name="author">
     </div>
 
     <div>
       <label>Musica</label>
-      <input type="text">
+      <input type="text" [(ngModel)]="music" name="music">
     </div>
 
-    <button> Criar </button>
+    <button (click)="cadastrarMusica()"> Criar </button>
   </form>
 
   <table>
     <thead>
-      <th> Id </th>
-      <th> Author </th>
-      <th> Musica </th>
-      <th> ... </th>
+      <tr>
+        <th> Id </th>
+        <th> Author </th>
+        <th> Musica </th>
+        <th> ... </th>
+      </tr>
     </thead>
 
     <tbody>
