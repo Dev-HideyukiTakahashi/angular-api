@@ -23,11 +23,16 @@ export class MusicsService {
 
   /* POST */
   cadastrarMusica(music: Music) {
-    return this.httpClient.post<Music>(this.url, music)
+    return this.httpClient.post<Music>(this.url, music);
   }
 
   /* Put */
   editarMusica(music: Music) {
-    return this.httpClient.put<Music>(this.url + `/${music.id}`, music)
+    return this.httpClient.put<Music>(this.url + `/${music.id}`, music);
+  }
+
+  /* Delete */
+  remover(id: number) {
+    return this.httpClient.delete<void>(this.url + `/${id}`);
   }
 }

@@ -65,4 +65,9 @@ export class AppComponent {
     this.author = music.author;
     this.music = music.text;
   }
+
+  remover(id: number) {
+    this.musicsService.remover(id)
+      .subscribe(() => this.obterMusicas());
+  }
 }

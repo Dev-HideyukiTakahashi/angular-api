@@ -34,6 +34,8 @@
         <td> {{musica.author}}</td>
         <td> {{musica.text}}</td>
         <td> <span (click)="preencherCampos(musica)"> alterar </span> </td>
+        <!-- colocar ! no atributo, está informando que é garantido que não será um atributo undefined/null -->
+        <td> <span (click)="remover(musica.id!)"> remover </span> </td>
       </tr>
     </tbody>
   </table>
